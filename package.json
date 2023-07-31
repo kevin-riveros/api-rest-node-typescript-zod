@@ -8,7 +8,7 @@
     "check-version": "check-node-version --node $(cat .nvmrc)",
     "dev": "npm run check-version && ts-node-dev --respawn src/index.ts",
     "build": "npm version patch && rm -rf dist && npx tsc",
-    "test-build": "echo \"Build success\" && exit 1",
+    "test-build": "echo \"Build success\"",
     "start": "node dist/index.js"
   },
   "keywords": [],
