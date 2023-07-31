@@ -9,9 +9,6 @@ dump.rdb
 /log/*
 log/*
 
-# production
-/dist
-
 # local env files
 .env
 .env.local
