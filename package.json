@@ -1,0 +1,36 @@
+{
+  "name": "api-express-typescript",
+  "version": "1.0.1",
+  "description": "Boilerplate APIR restful with ZOD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check-version": "check-node-version --node $(cat .nvmrc)",
+    "dev": "npm run check-version && ts-node-dev --respawn src/index.ts",
+    "build": "npm version patch && rm -rf dist && npx tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "16.3.1",
+    "express": "4.18.2",
+    "zod": "3.21.4"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.17",
+    "check-node-version": "4.2.1",
+    "eslint": "8.46.0",
+    "standard": "17.1.0",
+    "ts-node-dev": "2.0.0",
+    "typescript": "5.1.6"
+  },
+  "engines": {
+    "node": "20.5.0",
+    "npm": "9.8.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard"
+  }
+}
